@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SANS WEBCOMIC</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>SANS WEBCOMIC</h1>
+
+    <input type="text" id="searchInput" placeholder="Cari komik...">
+
+    <select id="genreFilter">
+      <option value="all">Semua Genre</option>
+      <option value="Aksi">Aksi</option>
+      <option value="Horor">Horor</option>
+      <option value="Fantasi">Fantasi</option>
+    </select>
+  </header>
+
+  <main class="comic-list">
+    <div class="comic-card" onclick="location.href='reader.html?komik=satu'">
+      <img src="komik/satu/cover.jpg" alt="Komik Satu">
+      <h2>Sakamoto Days</h2>
+      <!-- Deskripsi Komik -->
+      <p class="comic-description">
+        Sakamoto Days mengisahkan tentang seorang mantan pembunuh bayaran legendaris, Taro Sakamoto, yang kini menjalani kehidupan tenang sebagai penjaga toko. Namun, masa lalunya selalu membayangi.
+      </p>
+    </div>
+
+    <div class="comic-card" onclick="location.href='reader.html?komik=dua'">
+      <img src="komik/dua/cover1.jpg" alt="Komik dua">
+      <h2>Mercenary Enrollment</h2>
+      <!-- Deskripsi Komik -->
+      <p class="comic-description">
+        Yu Ijin adalah satu-satunya yang selamat dari kecelakaan pesawat saat dia masih kecil. Setelah menjadi tentara bayaran untuk bertahan hidup selama 10 tahun, ia kembali ke keluarganya di kampung halamannya.
+
+      </p>
+    </div>
+
+    <div class="comic-card" onclick="location.href='reader.html?komik=tiga'">
+      <img src="komik/tiga/cover2.jpg" alt="Komik tiga">
+      <h2>“Honyaku” no Sainou de Ore Dake ga Sekai wo Kaihen Dekiru Ken</h2>
+      <!-- Deskripsi Komik -->
+      <p class="comic-description">
+        Noah lahir dalam keluarga bangsawan sihir bergengsi, Ardeheim. dan diharapkan memiliki masa depan yang cerah, tetapi dia menghabiskan hari-harinya diperlakukan dengan dingin oleh keluarganya karena mereka mengetahui bahwa dia adalah anak berbakat yang tidak ada hubungannya dengan pertempuran
+      </p>
+    </div>
+    <!-- Tambah komik lain di sini -->
+  </main>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baca Komik - SANS WEBCOMIC</title>
+  <link rel="stylesheet" href="reader.css" />
+</head>
+<body class="reader-bg">
+
+  <header class="reader-header">
+    <button onclick="goBack()">⬅ Kembali</button>
+    <select id="episodeSelector" onchange="changeEpisode()">
+      <option value="episode1">Eps 1</option>
+      <option value="episode2">Eps 2</option>
+      <option value="episode3">Eps 3</option>
+      <option value="episode4">Eps 4</option>
+      <option value="episode5">Eps 5</option>
+      <option value="episode6">Eps 6</option>
+      <option value="episode7">Eps 7</option>
+      <option value="episode8">Eps 8</option>
+      <option value="episode9">Eps 9</option>
+      <option value="episode10">Eps 10</option>
+      <option value="episode11">Eps 11</option>
+      <option value="episode12">Eps 12</option>
+      <option value="episode13">Eps 13</option>
+      <option value="episode14">Eps 14</option>
+      <option value="episode15">Eps 15</option>
+      <option value="episode16">Eps 16</option>
+      <option value="episode17">Eps 17</option>
+      <option value="episode18">Eps 18</option>
+      <option value="episode19">Eps 19</option>
+      <option value="episode20">Eps 20</option>
+      <option value="episode21">Eps 21</option>
+      <option value="episode22">Eps 22</option>
+      <option value="episode23">Eps 23</option>
+      <option value="episode24">Eps 24</option>
+      <option value="episode25">Eps 25</option>
+      <!-- Tambah episode lain -->
+    </select>
+    <div id="progressBarContainer">
+      <div id="progressBar"></div>
+    </div>
+  </header>
+
+  <!-- Rating Komik -->
+<div id="ratingContainer">
+  <h3>⭐ Beri Rating Komik Ini:</h3>
+  <div id="stars"></div>
+  <div id="yourRating"></div>
+</div>
+
+  <main id="comicPages" class="comic-pages">
+    <!-- Gambar halaman komik akan muncul di sini -->
+  </main>
+
+  <!-- Komentar Section -->
+<section class="comments-section">
+  <h3>💬 Komentar</h3>
+  <form id="commentForm">
+    <input type="text" id="commentInput" placeholder="Tulis komentar..." required>
+    <button type="submit">Kirim</button>
+  </form>
+  <div id="commentsList"></div>
+</section>
+
+
+  <!-- Taruh JS eksternal di bawah -->
+  <script src="reader.js"></script>
+</body>
+</html>
